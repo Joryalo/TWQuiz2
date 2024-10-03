@@ -7,28 +7,32 @@
 
 \f0\fs24 \cf0 //----------------------------------------------------------------------------------------------\
 // Jory alotaibi 44411907 \
-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 // I changed the variable n to j and x to k and changed the array number \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
 // Java code for linearly search x in arr[]. If x\
 \
 // is present then return its location, otherwise\
 \
 // return -1\
 \
+\
 class LinearSearch \{\
 \
             // This function returns index of element x in arr[]\
 \
-            static int search(int arr[], int n, int x)\
+            static int search(int arr[], int j, int k)\
 \
             \{\
 \
-                        for (int i = 0; i < n; i++) \{\
+                        for (int i = 0; i < j; i++) \{\
 \
                                 // Return the index of the element if the element\
 \
                                     // is found\
 \
-                                    if (arr[i] == x)\
+                                    if (arr[i] == k)\
 \
                                                 return i;\
 \
@@ -48,13 +52,13 @@ class LinearSearch \{\
 \
             \{\
 \
-                        int[] arr = \{ 3, 4, 1, 7, 5 \};\
+                        int[] arr = \{ 4, 3, 6, 1, 2 \};  \
 \
-                        int n = arr.length;\
+                        int j = arr.length;\
 \
-                        int x = 4;\
+                        int k = 4;\
 \
-                        int index = search(arr, n, x);\
+                        int index = search(arr, j, k);\
 \
                         if (index == -1)\
 \
